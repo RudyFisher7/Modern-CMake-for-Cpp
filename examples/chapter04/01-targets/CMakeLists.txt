@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.20.0)
 project(BankApp CXX)
 
+include(CMakeGraphVizOptions.cmake)
+
 add_executable(terminal_app terminal_app.cpp)
 add_executable(gui_app gui_app.cpp)
 

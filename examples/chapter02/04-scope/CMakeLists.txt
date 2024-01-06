@@ -4,6 +4,7 @@ project(Scope)
 function(Inner)
   message("  > Inner: ${V}")
   set(V 3)
+#  set(V 3 PARENT_SCOPE)
   message("  < Inner: ${V}")
 endfunction()
 

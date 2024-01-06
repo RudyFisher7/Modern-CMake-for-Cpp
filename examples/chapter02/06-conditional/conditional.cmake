@@ -38,3 +38,20 @@ if ("TRUE")
 else()
   message(FALSE)
 endif()
+
+set(VAR1 FALSE)
+set(VAR2 "VAR1")
+
+if (${VAR2})
+  message("var 2 is true i guess")
+else()
+  message("var 2 is not true i guess")
+endif ()
+
+set(FOO BAR)
+
+if (FOO)
+  message("foo is true i guess")
+else()
+  message("foo is not true i guess")
+endif ()
